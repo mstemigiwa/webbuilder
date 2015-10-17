@@ -21,7 +21,7 @@
 												,'label'=>$addon['Addon']['name']
 											)
 										);
-										//TODO Format Add on boxes
+										//TODO DESIGN Format Add on boxes
 			}
 	         
 			?>

@@ -49,6 +49,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php
 				if (AuthComponent::user('id')){ echo "Hello ". $this->Html->link(AuthComponent::user('firstname'),array('controller'=>'users','action'=>'account')); 
 					echo "  <br />  " .  $this->Html->link("Logout", array("controller"=>"users","action"=>"logout"));
+					echo "  <br />  " .  $this->Html->link("Checkout", array("controller"=>"users","action"=>"checkout"));
 				} 
 				else {echo $this->Html->link("Login", array("controller"=>"users","action"=>"login"));
 					echo "  <br />  " .  $this->Html->link("Register", array("controller"=>"users","action"=>"register"));

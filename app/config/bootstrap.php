@@ -72,7 +72,8 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
  CakePlugin::load('DebugKit');
- 
+ CakePlugin::load('Stripe');
+  
  //CakePlugin::load('HybridAuth', array('bootstrap' => true));
 /**
  * You can attach event listeners to the request lifecycle as Dispatcher Filter . By Default CakePHP bundles two filters:
@@ -108,4 +109,10 @@ CakeLog::config('error', array(
 	'engine' => 'FileLog',
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
+));
+CakeLog::config('stripe', array(
+    'engine' => 'FileLog',
+    'types' => array('info', 'error'),
+    'scopes' => array('stripe'),
+    'file' => 'stripe',
 ));

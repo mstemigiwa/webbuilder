@@ -17,14 +17,14 @@
 		
 		
 		public function manage($id = null){
+			$this->Website->recursive = 2;	
 			$website = $this->Website->findById($id);
 			if(!$website) {throw new NotFoundException("Website not Found");}
 			else{
-				$this->Website->recursive = 3;
 				$this->set("website",$website);
 			}
-			$addons = $this->Website->WebsiteAddon->Addon->find("all");
-			$this->set("addons",$addons);
+			//$addons = $this->Website->WebsiteAddon->Addon->find("all"); TODO V2 Add back in to create up-sell opportunities
+			//$this->set("addons",$addons);
 		}
 		
 		public function create(){ 

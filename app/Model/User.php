@@ -1,7 +1,7 @@
 <?php
 	class User extends AppModel{
 		
-    	public $hasMany = array('Website');
+    	public $hasMany = array('Website'=>array('order'=>'Website.duedate'));
 		
 					
 		public $validate = array(
