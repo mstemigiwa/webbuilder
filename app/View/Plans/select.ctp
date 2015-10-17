@@ -12,7 +12,7 @@
 	        <div>
 	        <?php
 	        echo $this->Form->hidden('Website.plan_id',array('id'=>'WebsitePlan_'));
-	        foreach ($vars['plans'] as $plan) {	    //TODO Set up pricing table   
+	        foreach ($vars['plans'] as $plan) {	    //TODO DESIGN Set up pricing table   
 	        //$price = ($plan['Plan']['monthly'] >0)?  "NGN " . $plan['Plan']['monthly'] : "FREE!!!"; 	
 	        	echo $this->Form->input('plan_id'
 										,array(
@@ -24,7 +24,7 @@
 										)
 									);
 
-				//TODO Add icon for each type
+				//TODO DESIGN Add icon for each type
 			}
 			?>
 	        </div>

@@ -411,3 +411,33 @@ CakeNumber::addFormat(
  * Domainsbot API details
  */
  Configure::write('DomainsBot.api_key','b8509797add451dd6fede1212cb3c386');
+ 
+ 
+ /* 
+  * Stripe Configuration Details 
+  */
+  
+  Configure::write('Stripe', array(
+  'currency' => 'ngn',
+  'fields' => array(
+    'stripe_id' => 'id',
+    'stripe_last4' => array('card' => 'last4'),
+    'stripe_address_zip_check' => array('card' => 'address_zip_check'),
+    'stripe_cvc_check' => array('card' => 'cvc_check'),
+    'stripe_amount' => 'amount'
+  ),
+  'LiveSecret' => 'sk_live_TgIi23HgS6FFKQa4Cfh5I3MA', // from https://manage.stripe.com/account/apikeys
+  'mode' => 'Test',
+  'TestSecret' => 'sk_test_RFGi47TeI6UL9G1bKd9ZpTG3', // from https://manage.stripe.com/account/apikeys
+  'TestPublishableKey'=>'pk_test_OpkuSei7pNg6qya2chj7cyCx',
+  'LivePublishableKey'=>'pk_live_JgvKjCXaCcKbaOUVJtzMIa2I'
+));
+/*
+CakeLog::config('stripe', array(
+    'engine' => 'FileLog',
+    'types' => array('info', 'error'),
+    'scopes' => array('stripe'),
+    'file' => 'stripe',
+));
+ * 
+ */

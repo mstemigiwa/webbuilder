@@ -27,7 +27,7 @@
 										)
 									);
 
-				//TODO Add icon for each type
+				//TODO DESIGN Add icon for each type
 			}
 			?>
 	        </div>
@@ -52,7 +52,7 @@
 														,'hiddenField'=>false
 														)
 											);
-					//TODO Add icon for each type
+					//TODO DESIGN Add icon for each type
 				}
 	    	?>
 			<?php echo $this->Form->end(__('Next: Pick your Template')); ?>

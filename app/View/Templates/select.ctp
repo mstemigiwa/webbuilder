@@ -9,7 +9,7 @@
         	<ul>
         	<?php
         		foreach ($vars['categories'] as $category) {
-					echo "<li>" . $category['Category']['name'] . "</li>";
+					echo "<li>" . $category['Category']['name'] . "</li>"; //TODO DESIGN Filter Templates + Paging
 				}
         	?>
         	</ul>
@@ -33,10 +33,10 @@
 										)
 									);
 
-				//TODO Add icon for each type
-				//TODO Add link for demo
+				//TODO DESIGN Add icon for each type
+				//TODO DESIGN Add link for demo
 			}
-			//TODO Add code for "Custom Template"
+			//TODO DESIGN Add code for "Custom Template"
 			?>
 	        </div>
     </fieldset>
